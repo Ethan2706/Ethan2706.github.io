@@ -1,0 +1,10 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- top arrow (green) -->
+    <path d="M10.84 19.21 A14 14 0 0 1 37.16 19.21" stroke="#5fc88f"/>
+    <path d="M38.40 12.37 L37.16 19.21 L31.82 14.77" stroke="#5fc88f"/>
+    <!-- bottom arrow (amber), together they form a continuous swap loop -->
+    <path d="M37.16 28.79 A14 14 0 0 1 10.84 28.79" stroke="#e2935b"/>
+    <path d="M9.60 35.63 L10.84 28.79 L16.18 33.23" stroke="#e2935b"/>
+  </g>
+</svg>

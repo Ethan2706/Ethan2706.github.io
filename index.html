@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#0b0e13" />
+  <title>Re:Wear · Swap, don't shop</title>
+  <link rel="icon" type="image/svg+xml" href="logo.svg" />
+
+  <!-- Google Fonts: Instrument Serif (hero display) + DM Sans (UI) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Phone shell, centered on desktop against blurred backdrop -->
+  <div class="phone" id="app">
+
+    <!-- Loading screen -->
+    <div id="loading">
+      <svg class="rw-logo loading-mark" width="84" height="84" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+        <g stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" fill="none">
+          <path d="M10.84 19.21 A14 14 0 0 1 37.16 19.21" stroke="var(--green)"/>
+          <path d="M38.40 12.37 L37.16 19.21 L31.82 14.77" stroke="var(--green)"/>
+          <path d="M37.16 28.79 A14 14 0 0 1 10.84 28.79" stroke="var(--amber)"/>
+          <path d="M9.60 35.63 L10.84 28.79 L16.18 33.23" stroke="var(--amber)"/>
+        </g>
+      </svg>
+      <div class="lw">Re<span class="dot">:</span>Wear</div>
+      <div class="lspin"></div>
+      <div class="ltext">Loading your wardrobe…</div>
+    </div>
+
+    <!-- iOS-style status bar (injected per screen) -->
+    <div id="statusbar-slot"></div>
+
+    <!-- Screen viewport -->
+    <div class="viewport" id="viewport"></div>
+
+    <!-- Bottom navigation (injected per screen) -->
+    <div id="nav-slot"></div>
+
+    <!-- Toasts -->
+    <div id="toast-wrap"></div>
+
+    <!-- Modal -->
+    <div class="modal-bg" id="modal-bg">
+      <div class="modal"></div>
+    </div>
+  </div>
+
+  <div class="desk-hint">Re:Wear · mobile prototype, best viewed at 430px</div>
+
+  <!-- Scripts: data → components → controller -->
+  <script src="data.js"></script>
+  <script src="components.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
